@@ -48,12 +48,12 @@ const swiper = new Swiper('.image-slider', {
       clickable: true,
     },
 
-    // autoplay: {
-    //   //delay: 2000,
-    //   stopOnLastSlide: true,
-    //   disableInteraction: false
+    autoplay: {
+      delay: 4000,
+      stopOnLastSlide: true,
+      disableInteraction: false
 
-    // },
+    },
     // speed: 800,
     // autoHeight: true,
      spaceBetween: 30,
@@ -74,23 +74,21 @@ const swiper = new Swiper('.image-slider', {
 
 
 //-----------------------------------------------------------------------------------
-$('.header__burger').click(function(evt){
+$('.header__burger, .header__link').click(function(evt){
     $('.header__burger, .header__nav').toggleClass('active');
     // $('body').toggleClass('lock');
-})
+});
 
-$('.header__link, .header__burger,').click(function(evt) {
-  $('.header__nav').toggleClass('active');
-})
+
 
 //---------------------------------------------------------------------------------------
 
-let map;
+// let map;
 
 
-function initMap() {
-  map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: 50.46952589082321, lng: 30.61993137607467 },
-    zoom: 19,
-  });
-}
+// function initMap() {
+//   map = new google.maps.Map(document.getElementById("map"), {
+//     center: { lat: 50.46952589082321, lng: 30.61993137607467 },
+//     zoom: 19,
+//   });
+// }

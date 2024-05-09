@@ -167,9 +167,10 @@
 //--------------------------------------------------
 //------Hero-----
 .hero{
+   
     height: 100vh;
     width: 100%;
-    background-image: url(../images/bg-hero4.jpg);
+    background-image: url(../images/bg-hero-main.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -186,14 +187,8 @@
         
         color: $green-color;
         text-transform: uppercase;
-        padding-top: 120px;
+        padding-top: 80px;
         text-shadow: 1px 1px 1px orange;
-       
-        
-        
-      
-      
-
     }
 
     &__subtitle{
@@ -206,6 +201,19 @@
         text-shadow: 1px 1px 0px $green-color;
     }
 
+    &__content{
+        
+       
+        height: 400px;
+        background-image: url(../images/bg-hero3.png);
+        background-size: contain;
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        
+        
+        
+    }
+
    
 }
 
@@ -214,36 +222,57 @@
         
         background-position: center center;
         &__title{
-            font-size: 96px;
-            span{
-                font-size: 50px;
-            }
-        }
-        &__mask{
-            background-color: transparent;
+            font-size: 76px;
+            text-align: center;
             
         }
+
+        &__subtitle{
+            text-align: center;
+            font-size: 45px;
+        }
+
+        &__content{
+            
+            height: 300px;
+            
+            
+        }
+        
     }
     
 }
 
-@media(max-width: 769px){
+@media(max-width: 821px){
     .hero{
         
-        background-size: 90%;
+        
         &__title{
-            font-size: 96px;
-            padding-top: 90px;
-           
+            font-size: 56px;
+             padding-top: 70px;
         }
+        &__subtitle{
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+           
+        
+        &__content{
+            
+        
+            height: 200px;
+            background-position: center center;
+        }
+
+
         
         
     }
 }
 
-@media(max-width: 475px){
+@media(max-width: 512px){
     .hero{
-        background-image: url(../images/bg-hero5.jpg);
+        
         background-size: cover;
         background-position: center center;
         
@@ -257,7 +286,15 @@
         &__subtitle{
             font-size: 33px;
             text-align: center;
+            margin-bottom: 50px;
             
+        }
+
+        &__content{
+            background-image: url(../images/range.png);
+            height: 300px;
+           // background-position: top center;
+            background-size: 110%;
         }
     }
    
@@ -431,7 +468,7 @@
     }
 
     .image-slider__image img{
-        max-width: 700px;
+        max-width: 800px;
         height: 700px;
         margin: 0 auto;
         box-shadow: 0 -1px 20px $green-color; 
@@ -467,7 +504,7 @@
 
 .image-slider__image img{
     display: block;
-    width: 280px;
+    width: 300px;
     height: 350px;
     margin: 0 auto;
     
